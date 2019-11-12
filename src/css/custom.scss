@@ -1,3 +1,66 @@
-.red {
-    color: red;
+/* GLOBAL */
+
+.overallContainer {
+  width: 100%;
 }
+
+/* #region header */
+
+.headerContainer {
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  background-color: rgb(89, 108, 124);
+}
+
+#logo {
+  all: unset;
+  display: inline-block;
+  vertical-align: middle;
+  width: 169px;
+  padding: 1em 11em 1em 2em;
+}
+
+#title {
+  all: unset;
+  vertical-align: middle;
+  font-size: 5em;
+  color: white;
+  padding: 0.5em;
+  margin: 0;
+}
+
+/* #endregion header */
+
+/* #region body */
+
+.bodyContainer {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  background-color: white
+}
+
+#body {
+  width: 100%;
+}
+
+#profilePic {
+  width: 400px;
+  float: left;
+}
+
+.subHeader {
+  margin: 0;
+  padding: 1em 1em 0 1em;
+}
+
+.list  {
+  padding-left: 0em;   
+  list-style-position: inside;
+  padding: .4em;
+}
+
+/* #endregion body */
