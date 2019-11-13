@@ -48,19 +48,54 @@
 }
 
 #profilePic {
-  width: 400px;
+  width: 300px;
   float: left;
 }
 
 .subHeader {
   margin: 0;
-  padding: 1em 1em 0 1em;
+  font-size: 2em;
+  padding: .5em;
+  color: #1f51a5;
+  text-align: center;
 }
 
-.list  {
-  padding-left: 0em;   
-  list-style-position: inside;
-  padding: .4em;
+.listText {
+  font-size: 1.2em;
+  word-spacing: 6px;
+  line-height: 2em;
+  text-align: center;
 }
+
+#links {
+  text-align: center;
+}
+
+.icon {
+  font-size: 3em;
+  padding: 1em;
+  color: black;
+}
+
+.icon:hover {
+  color: rgb(68,146,215);
+}
+
+#resumeLink {
+  color: #1f51a5;
+}
+
+#resume {
+  margin: 0;
+  font-size: 2em;
+  padding: .5em;
+  color: #1f51a5;
+  text-align: center;
+}
+
+#resume:hover {
+  color: rgb(68,146,215);
+}
+
 
 /* #endregion body */
