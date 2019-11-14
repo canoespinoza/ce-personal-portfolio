@@ -4,48 +4,85 @@
   width: 100%;
 }
 
+.bodyContainer {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  background-color: white
+}
+
+.body {
+  width: 100%;
+}
+
 /* #region header */
 
 .headerContainer {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #header {
   width: 100%;
   background-color: rgb(89, 108, 124);
+  flex-direction: row;
+  justify-content: center;
 }
 
 #logo {
   all: unset;
   display: inline-block;
   vertical-align: middle;
-  width: 169px;
-  padding: 1em 11em 1em 2em;
+  width: 100px;
+  padding: 1em 1em 1em 2em;
 }
 
 #title {
   all: unset;
   vertical-align: middle;
-  font-size: 5em;
+  font-size: 3em;
   color: white;
   padding: 0.5em;
   margin: 0;
 }
 
+#links {
+  margin: 0 0 0 27em;
+  vertical-align: -webkit-baseline-middle;
+  padding: 1em;
+  display: inline-flex;
+}
+
+#resumeLink {
+  color: white;
+  text-decoration: none
+}
+
+#resume {
+  margin: 0;
+  font-size: 1.3em;
+  padding: 0.5em; 
+  color: white;
+}
+
+#resume:hover {
+  color: rgb(68,146,215);
+}
+
+.icon {
+  font-size: 1.5em;
+  padding: 0.5em;
+  color: white;
+}
+
+.icon:hover {
+  color: rgb(68,146,215);
+}
+
 /* #endregion header */
 
 /* #region body */
-
-.bodyContainer {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto 0 auto;
-  background-color: white
-}
-
-#body {
-  width: 100%;
-}
 
 #profilePic {
   width: 300px;
@@ -65,37 +102,21 @@
   word-spacing: 6px;
   line-height: 2em;
   text-align: center;
-}
-
-#links {
-  text-align: center;
-}
-
-.icon {
-  font-size: 3em;
-  padding: 1em;
-  color: black;
-}
-
-.icon:hover {
-  color: rgb(68,146,215);
-}
-
-#resumeLink {
-  color: #1f51a5;
-}
-
-#resume {
-  margin: 0;
-  font-size: 2em;
-  padding: .5em;
-  color: #1f51a5;
-  text-align: center;
-}
-
-#resume:hover {
-  color: rgb(68,146,215);
+  margin: 1em;
 }
 
 
 /* #endregion body */
+
+/* #region projects */
+
+.sectionTitle {
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(89, 108, 124);
+  color: white;
+  margin: 0;
+}
+
+
+/* #endregion projects */
