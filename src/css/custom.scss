@@ -5,7 +5,7 @@
 }
 
 .bodyContainer {
-  width: 100%;
+  width: 75%;
   margin: 0 auto 0 auto;
   background-color: white
 }
@@ -48,10 +48,10 @@
 }
 
 #links {
-  margin: 0 0 0 27em;
-  vertical-align: -webkit-baseline-middle;
-  padding: 1em;
+  padding: 2em;
   display: inline-flex;
+  float: right;
+  margin-top: 1em;
 }
 
 #resumeLink {
@@ -85,7 +85,7 @@
 /* #region body */
 
 #profilePic {
-  width: 300px;
+  width: 250px;
   float: left;
 }
 
@@ -94,17 +94,16 @@
   font-size: 2em;
   padding: .5em;
   color: #1f51a5;
-  text-align: center;
+  text-align: left;
 }
 
 .listText {
-  font-size: 1.2em;
-  word-spacing: 6px;
+  font-size: 1em;
+  word-spacing: 2px;
   line-height: 2em;
-  text-align: center;
-  margin: 1em;
+  text-align: left;
+  margin: 0;
 }
-
 
 /* #endregion body */
 
@@ -116,7 +115,25 @@
   background-color: rgb(89, 108, 124);
   color: white;
   margin: 0;
+  padding: 5px;
 }
 
+.projImage {
+  max-width: 50em;
+  width: 100%;
+  height: auto;
+  margin: 4em 4.61em 2em 4.61em;
+}
+
+.projImage:hover {
+  box-shadow: 2px 2px 5px #1f51a5;
+}
+
+.projDescription {
+  text-align: center;
+  margin: 0 3em 0 3em;
+  font-size: 1.5em;
+  line-height: 2em;
+}
 
 /* #endregion projects */
