@@ -9,22 +9,26 @@ export default class Projects extends React.Component {
     return (
       <div className='overallContainer'>
         <div className='bodyContainer'>
-          <div className='row'>
-            <div className='body'>
+            <div className='projectBody'>
               <h1 className='sectionTitle'>Projects</h1>
               <div className='sectionBody'>
-                <a href='https://ce-mortgage-calculator.herokuapp.com/' target='_blank'>
-                  <img className='projImage' src={mortgageCalc}></img>
-                </a>
-                <a href='https://ce-vstda.herokuapp.com/' target='_blank'>
-                  <img className='projImage' src={vstda}></img>
-                </a>
-                <a href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>
-                  <img className='projImage' src={sdTopSpots}></img>
-                </a>
+                <div className='projectLink'>
+                  <a href='https://ce-mortgage-calculator.herokuapp.com/' target='_blank'>
+                    <img className='projImage' src={mortgageCalc}></img>
+                  </a>
+                </div>
+                <div className='projectLink'>  
+                  <a href='https://ce-vstda.herokuapp.com/' target='_blank'>
+                    <img className='projImage' src={vstda}></img>
+                  </a>
+                </div> 
+                <div className='projectLink'> 
+                  <a href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>
+                    <img className='projImage' src={sdTopSpots}></img>
+                  </a>
+                </div>  
               </div>
             </div>
-          </div>
         </div>
       </div>
     )

@@ -7,11 +7,10 @@
 .bodyContainer {
   width: 75%;
   margin: 0 auto 0 auto;
-  background-color: white
-}
-
-.body {
-  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* #region header */
@@ -19,15 +18,13 @@
 .headerContainer {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
 #header {
   width: 100%;
   background-color: rgb(89, 108, 124);
-  flex-direction: row;
-  justify-content: center;
 }
 
 #logo {
@@ -42,13 +39,14 @@
   all: unset;
   vertical-align: middle;
   font-size: 3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   padding: 0.5em;
   margin: 0;
 }
 
 #links {
-  padding: 2em;
+  padding: 2em 2em 2em 0;
   display: inline-flex;
   float: right;
   margin-top: 1em;
@@ -56,6 +54,7 @@
 
 #resumeLink {
   color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
   text-decoration: none
 }
 
@@ -80,9 +79,33 @@
   color: rgb(68,146,215);
 }
 
+@media (max-width: 850px) {
+
+  #title {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+
+  #links {
+    margin: 0;
+    text-align: center;
+  }
+
+  #logo {
+    justify-content: center
+  }
+
+}
+
 /* #endregion header */
 
 /* #region body */
+
+.picContainer{
+  text-align: left;
+}
 
 #profilePic {
   width: 250px;
@@ -91,6 +114,7 @@
 
 .subHeader {
   margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2em;
   padding: .5em;
   color: #1f51a5;
@@ -99,41 +123,66 @@
 
 .listText {
   font-size: 1em;
+  color: rgb(83, 83, 83);
+  font-family: Georgia, 'Times New Roman', Times, serif;
   word-spacing: 2px;
   line-height: 2em;
   text-align: left;
   margin: 0;
+  padding: 0.27em 1em;
+}
+
+@media (max-width: 523px) {
+
+  .picContainer {
+    text-align: center;
+  }
+
+  .listText, .subHeader {
+    text-align: center;
+  }
 }
 
 /* #endregion body */
 
 /* #region projects */
 
+.projectBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .sectionTitle {
-  font-size: 2em;
+  font-size: 1.7em;
   text-align: center;
   background-color: rgb(89, 108, 124);
-  color: white;
+  color: rgb(250, 250, 250);
   margin: 0;
-  padding: 5px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .projImage {
   max-width: 50em;
   width: 100%;
   height: auto;
-  margin: 4em 4.61em 2em 4.61em;
+  // margin: 4em 4.61em 2em 4.61em;
 }
 
 .projImage:hover {
-  box-shadow: 2px 2px 5px #1f51a5;
+  box-shadow: 4px 3px 6px rgb(89, 108, 124);
 }
 
-.projDescription {
+.sectionBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectLink {
   text-align: center;
-  margin: 0 3em 0 3em;
-  font-size: 1.5em;
-  line-height: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 /* #endregion projects */
