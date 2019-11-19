@@ -86,15 +86,28 @@
   }
 }
 
+@media (max-width: 523px) {
+
+  #logo {
+    width: 80px;
+  }
+}
+
 @media (max-width: 414px) {
 
   #links {
     margin: 0;
     text-align: center;
+    font-size: .5em;
   }
 
   #logo {
-    justify-content: center
+    justify-content: center;
+    width: 80px;
+  }
+
+  .bodyContainer {
+    width: 100%;
   }
 
 }
@@ -103,8 +116,8 @@
 
 /* #region body */
 
-.picContainer{
-  text-align: left;
+.picContainer {
+  margin: 0;
 }
 
 #profilePic {
@@ -115,27 +128,33 @@
 .subHeader {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 2em;
+  font-size: 1.7em;
   padding: .5em;
   color: #1f51a5;
   text-align: left;
 }
 
 .listText {
-  font-size: 1em;
+  font-size: .97em;
   color: rgb(83, 83, 83);
   font-family: Georgia, 'Times New Roman', Times, serif;
   word-spacing: 2px;
   line-height: 2em;
   text-align: left;
   margin: 0;
-  padding: 0.27em 1em;
+  padding: 0.27em 2em;
 }
 
 @media (max-width: 523px) {
 
   .picContainer {
     text-align: center;
+  }
+
+  #profilePic {
+    float: none;
+    padding-right: 1em;
+    width: 225px
   }
 
   .listText, .subHeader {
@@ -167,7 +186,6 @@
   max-width: 50em;
   width: 100%;
   height: auto;
-  // margin: 4em 4.61em 2em 4.61em;
 }
 
 .projImage:hover {
@@ -183,6 +201,15 @@
   text-align: center;
   margin-top: 3em;
   margin-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
+@media (max-width: 523px) {
+
+  .projectLink {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
 /* #endregion projects */
