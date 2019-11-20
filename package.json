@@ -1,5 +1,5 @@
 {
-  "name": "react-parcel",
+  "name": "ce-personal-portfolio",
   "version": "1.0.0",
   "description": "personal portfolio for Cano Espinoza",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SanDiegoCodeSchool/react-parcel.git"
+    "url": "git+https://github.com/canoespinoza/ce-personal-portfolio"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SanDiegoCodeSchool/react-parcel/issues"
+    "url": "https://github.com/canoespinoza/ce-personal-portfolio/issues"
   },
-  "homepage": "https://github.com/SanDiegoCodeSchool/react-parcel#readme",
+  "homepage": "https://github.com/canoespinoza/ce-personal-portfolio",
   "dependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
