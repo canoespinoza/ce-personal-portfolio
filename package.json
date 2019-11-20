@@ -8,7 +8,7 @@
     "npm": "6.10.1"
   },
   "scripts": {
-    "start": "node server",
+    "start": "npm run build && node server",
     "build": "NODE_ENV=production parcel build src/index.html",
     "watch": "NODE_ENV=development parcel watch src/index.html"
   },
