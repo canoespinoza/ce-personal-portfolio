@@ -1,6 +1,6 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
+//import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+//import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import resume from './documents/Resume(CanoEspinoza)V2.pdf';
 import logo from './images/CElogo1.png';
 
