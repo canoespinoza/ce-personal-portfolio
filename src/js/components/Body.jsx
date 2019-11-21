@@ -1,7 +1,6 @@
 import React from 'react';
 import profilePic from './images/profilePic.JPG';
 
-
 export default class Body extends React.Component {
 
   render() {
