@@ -18,7 +18,7 @@ export default class Projects extends React.Component {
                   </a>
                   <div className='projectInfo'>
                     <h4 className='projectTitle'>Mortgage Calculator:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React-Mortgage-Calculator'>
+                    <a className='gitLink' href='https://github.com/canoespinoza/React-Mortgage-Calculator' target='_blank'>
                       https://github.com/canoespinoza/React-Mortgage-Calculator
                     </a>
                     <div className='projectDescription'>
@@ -34,7 +34,7 @@ export default class Projects extends React.Component {
                   </a>
                   <div className='projectInfo'>
                     <h4 className='projectTitle'>Very Simple ToDo App:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React100-VSTDA'>
+                    <a className='gitLink' href='https://github.com/canoespinoza/React100-VSTDA' target='_blank'>
                       https://github.com/canoespinoza/React100-VSTDA
                     </a>
                     <div className='projectDescription'>
@@ -50,7 +50,7 @@ export default class Projects extends React.Component {
                   </a>
                   <div className='projectInfo'>
                     <h4 className='projectTitle'>San Diego Top Spots:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots'>
+                    <a className='gitLink' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots' target='_blank'>
                     https://github.com/canoespinoza/React100-San-Diego-Top-Spots
                     </a>
                     <div className='projectDescription'>
