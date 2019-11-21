@@ -4,7 +4,7 @@ import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-b
 import resume from './documents/Resume(CanoEspinoza)V2.pdf';
 import logo from './images/CElogo1.png';
 
-export default class header extends React.Component {
+export default class Header extends React.Component {
 
   render() {
     return (
