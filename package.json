@@ -39,9 +39,7 @@
     "react-sticky-el": "^1.1.0",
     "react-sticky-header": "^0.2.0",
     "sass": "^1.22.9",
-    "src": "^1.1.2"
-  },
-  "devDependencies": {
+    "src": "^1.1.2",
     "cssnano": "^4.1.10",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4"
