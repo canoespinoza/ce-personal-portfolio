@@ -2,13 +2,13 @@
   "name": "ce-personal-portfolio",
   "version": "1.0.0",
   "description": "personal portfolio for Cano Espinoza",
-  "main": "index.js",
+  "main": "src/index.js",
   "engines": {
     "node": "10.16.0",
     "npm": "6.10.1"
   },
   "scripts": {
-    "start": "npm run build && node server",
+    "start": "node server",
     "build": "npm install && parcel build src/index.html",
     "watch": "NODE_ENV=development parcel watch src/index.html"
   },
