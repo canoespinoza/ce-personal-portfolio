@@ -1,3 +1,11 @@
 {
-    "presets": [ "@babel/preset-env", "@babel/preset-react" ]
-}
+    "presets": ["es2015", "react", "stage-0", "@babel/preset-env", "@babel/preset-react" ],
+    "env": {
+      "cjs": {
+        "plugins": ["add-module-exports"]
+      },
+      "test": {
+        "plugins": ["rewire-exports", "transform-decorators-legacy"]
+      }
+    }
+  }
