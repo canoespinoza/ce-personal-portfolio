@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm run build && node server",
-    "build": "npm install && NODE_ENV=production parcel build src/index.html",
+    "build": "npm install && parcel build src/index.html",
     "watch": "NODE_ENV=development parcel watch src/index.html"
   },
   "repository": {
