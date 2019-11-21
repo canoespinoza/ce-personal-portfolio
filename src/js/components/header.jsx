@@ -1,10 +1,10 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
-//import resume from './documents/Resume(CanoEspinoza)V2.pdf';
+import resume from './documents/Resume(CanoEspinoza)V2.pdf';
 import logo from './images/CElogo1.png';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
   render() {
     return (
@@ -14,9 +14,9 @@ export default class Header extends React.Component {
               <img id='logo' src={logo}/>
               <div id='title'>Cano Espinoza</div>
               <div id='links'>
-                {/* <a id='resumeLink' href={resume} target='_blank'>
+                <a id='resumeLink' href={resume} target='_blank'>
                   <div id='resume'>Resume</div>
-                </a>   */}
+                </a>  
                 <a className='icon' href='https://www.linkedin.com/in/cano-espinoza-b8a343193/' target='_blank'>
                   <FontAwesomeIcon icon={faLinkedin}/>
                 </a>
@@ -36,3 +36,5 @@ export default class Header extends React.Component {
     )
   }
 }
+
+export default Header;
