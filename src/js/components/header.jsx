@@ -1,8 +1,8 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import resume from './documents/Resume(CanoEspinoza)V2.pdf';
-import logo from './images/CElogo1.png';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
+// import resume from './documents/Resume(CanoEspinoza)V2.pdf';
+// import logo from './images/CElogo1.png';
 
 export default class Header extends React.Component {
 
@@ -11,9 +11,9 @@ export default class Header extends React.Component {
       <div className='overallContainer'>
         <div className='headerContainer'>
             <div id='header'>
-              <img id='logo' src={logo}/>
+              {/* <img id='logo' src={logo}/> */}
               <div id='title'>Cano Espinoza</div>
-              <div id='links'>
+              {/* <div id='links'>
                 <a id='resumeLink' href={resume} target='_blank'>
                   <div id='resume'>Resume</div>
                 </a>  
@@ -29,7 +29,7 @@ export default class Header extends React.Component {
                 <a className='icon' href='https://www.youtube.com/channel/UCaaIItB3QrC1zfU8FiHeeCA' target='_blank'>
                   <FontAwesomeIcon icon={faYoutube}/>
                 </a>
-              </div>   
+              </div>    */}
             </div>
         </div>
       </div>
