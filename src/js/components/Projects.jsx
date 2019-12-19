@@ -2,6 +2,7 @@ import React from 'react';
 import mortgageCalc from './images/mortgageCalc.png';
 import vstda from './images/vstda.png';
 import sdTopSpots from './images/sdtopspots.png';
+import CRLee from './images/C.R. Lee (1).webm';
 
 export default class Projects extends React.Component {
 
@@ -12,6 +13,22 @@ export default class Projects extends React.Component {
         <div className='bodyContainer'>
             <div className='projectBody'>
               <div className='sectionBody'>
+              <div className='projectLink'>
+                  <video controls
+                    src={CRLee}
+                    max-width='50em'
+                    width='100%'
+                  >
+                  </video>
+                  <div className='projectInfo'>
+                    <h4 className='projectTitle'>Ms. Cheryl R. Lee's Brand Website:</h4>  
+                    <div className='projectDescription'>
+                      Want to know your mortgage payments? This app accepts input for a loan amount,
+                      an interest rate, and a term length, then calculates your mortgage payment one the button 
+                      is clicked. Built using Javascript, React, Bootstrap, and Express.
+                    </div>
+                  </div>
+                </div>
                 <div className='projectLink'>
                   <a href='https://ce-mortgage-calculator.herokuapp.com/' target='_blank'>
                     <img className='projImage' src={mortgageCalc}></img>
