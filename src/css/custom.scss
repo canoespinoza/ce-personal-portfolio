@@ -29,6 +29,7 @@ body {
   flex-direction: row;
   justify-content: center;
   position: fixed;
+  z-index: 1;
 }
 
 #header {
@@ -195,6 +196,12 @@ body {
 
 .projImage:hover {
   box-shadow: 4px 3px 6px rgb(89, 108, 124);
+}
+
+.projVideo {
+  max-width: 50em;
+  width: 100%;
+  height: auto;
 }
 
 .sectionBody {

@@ -16,16 +16,22 @@ export default class Projects extends React.Component {
               <div className='projectLink'>
                   <video controls
                     src={CRLee}
-                    max-width='50em'
-                    width='100%'
+                    className='projVideo'
                   >
+                    <source src={CRLee} type='video/webm'/>
+                    <p>Unfortunately, your browser does not support this video.
+                       But you can view it here: <a href='https://drive.google.com/file/d/1hTaKlHJN49NhBqep7J1UWIpN_LnKmK6k/view?usp=sharing'
+                       >C.R. Lee Walkthrough</a>
+                    </p>
                   </video>
                   <div className='projectInfo'>
-                    <h4 className='projectTitle'>Ms. Cheryl R. Lee's Brand Website:</h4>  
+                    <h4 className='projectTitle'>Cheryl R. Lee's Brand Website:</h4>  
                     <div className='projectDescription'>
-                      Want to know your mortgage payments? This app accepts input for a loan amount,
-                      an interest rate, and a term length, then calculates your mortgage payment one the button 
-                      is clicked. Built using Javascript, React, Bootstrap, and Express.
+                      This is a screencast walkthrough of Ms. Lee's brand website. A team and I were asked to transition Ms. Lee's personal site out of Wordpress and into React.
+                      We were given content and a color scheme, but we had free reign to structure out 
+                      the site how we saw fit. I designed and built the Credentials and Achievements pages (timestamps 0:39 and 1:04), 
+                      which the team decided to adopt as the standard layout for each page. The site is fully-responsive and
+                      looks great on mobile devices (timestamp 2:00). Ms. Lee was extremely happy with our work. 
                     </div>
                   </div>
                 </div>
