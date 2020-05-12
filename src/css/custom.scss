@@ -1,24 +1,38 @@
 /* GLOBAL */
-body {
-  margin: 0;
-  padding: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
 .overallContainer {
   width: 100%;
 }
 
 .bodyContainer {
-  width: 80%;
-  margin: 0 auto 0 auto;
+  width: 100%;
+  margin: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+//add other src for all compatibility 
+@font-face {
+  font-family: 'TypoThin';
+  src: url(fonts/TypoThin/typo_round_thin_demo-webfont.woff);
+}
+
+@font-face {
+  font-family: 'TypoRegular';
+  src: url(fonts/TypoRegular/typo_round_regular_demo-webfont.woff);
+}
+
+@font-face {
+  font-family: 'TypoBold';
+  src: url(fonts/TypoBold/typo_round_bold_demo-webfont.woff);
+}
+
+@font-face {
+  font-family: 'TypoItalics';
+  src: url(fonts/TypoItalics/typo_round_light_italic_demo-webfont.woff);
 }
 
 /* #region header */
@@ -28,51 +42,50 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: fixed;
-  z-index: 1;
 }
 
 #header {
   width: 100%;
-  background-color: rgb(89, 108, 124);
+  background-color: white;
 }
 
 #logo {
   all: unset;
   display: inline-block;
   vertical-align: middle;
-  width: 100px;
+  width: 150px;
   padding: 1em 1em 1em 2em;
 }
 
 #title {
   all: unset;
   vertical-align: middle;
-  font-size: 3em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: white;
+  justify-content: center;
+  font-size: 4.3em;
+  font-family: TypoThin;
+  color: rgb(76, 163, 237);
   padding: 0.5em;
   margin: 0;
 }
 
 #links {
-  padding: 2em 2em 2em 0;
+  align-content: center;
+  padding: 3em 2em 2em 0;
   display: inline-flex;
   float: right;
   margin-top: 1em;
 }
 
 #resumeLink {
-  color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-family: TypoRegular; 
   text-decoration: none
 }
 
 #resume {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 0.5em; 
-  color: white;
+  color:rgba(172, 181, 189);
 }
 
 #resume:hover {
@@ -80,36 +93,33 @@ body {
 }
 
 .icon {
-  font-size: 1.5em;
+  font-size: 1.7em;
   padding: 0.5em;
-  color: white;
+  color: rgba(172, 181, 189);
 }
 
 .icon:hover {
   color: rgb(68,146,215);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1080px) {
 
   #title {
     display: none;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
+
+  #header {
+    text-align: center;
+  }
 
   #links {
+    align-content: center;
+    float: none;
     margin: 0;
-    text-align: center;
-    font-size: .5em;
-  }
-
-  #logo {
-    justify-content: center;
-  }
-
-  .bodyContainer {
-    width: 100%;
+    padding: 1em;
   }
 
 }
@@ -119,53 +129,39 @@ body {
 /* #region body */
 
 .body {
-  margin-top: 9em;
+  margin-top: 1em;
 }
 
 .picContainer {
-  margin: 0;
+  position: relative;
+  text-align: center;
+  background-image: linear-gradient(black, rgb(92, 92, 92));
 }
 
-#profilePic {
-  width: 250px;
-  float: left;
+#heroPic {
+  width: 100%;
+  opacity: 0.75;
 }
 
 .subHeader {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.7em;
-  padding: .5em;
-  color: #1f51a5;
-  text-align: left;
+  font-family: TypoRegular;
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
+
 }
 
 .listText {
-  font-size: .97em;
-  color: rgb(83, 83, 83);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  word-spacing: 2px;
-  line-height: 2em;
-  text-align: left;
-  margin: 0;
-  padding: 0.27em 2em;
-}
-
-@media (max-width: 523px) {
-
-  .picContainer {
-    text-align: center;
-  }
-
-  #profilePic {
-    float: none;
-    padding-right: 1em;
-    width: 225px
-  }
-
-  .listText, .subHeader {
-    text-align: center;
-  }
+  font-size: 2vw;
+  color: white;
+  font-family: TypoItalics;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 50%;
 }
 
 /* #endregion body */
@@ -176,20 +172,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.sectionBody {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .sectionTitle {
-  font-size: 1.7em;
+  font-size: 3em;
   text-align: center;
-  background-color: rgb(89, 108, 124);
-  color: rgb(250, 250, 250);
+  background-color: white;
+  color: rgb(76, 163, 237);
   margin: 0;
-  padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 50px;
+  font-family: TypoThin;
+  text-decoration: underline;
 }
 
 .projImage {
-  max-width: 50em;
+  max-width: 40em;
+  width: 100%;
+  height: auto;
+}
+
+#lim-logo {
+  max-width: 20em;
   width: 100%;
   height: auto;
 }
@@ -199,14 +211,9 @@ body {
 }
 
 .projVideo {
-  max-width: 50em;
+  max-width: 60em;
   width: 100%;
   height: auto;
-}
-
-.sectionBody {
-  display: flex;
-  flex-direction: column;
 }
 
 .projectLink {
@@ -218,13 +225,16 @@ body {
 }
 
 .projectInfo {
-  margin: 0;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  max-width: 30em;
 }
 
 .projectTitle {
   color: #1f51a5;
-  font-size: 1.2em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .gitLink {
@@ -237,11 +247,13 @@ body {
 
 .projectDescription {
   color: rgb(83, 83, 83);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
   word-spacing: 2px;
   line-height: 1.5em;
-  font-size: .95em;
+  font-size: 1em;
+  text-align: left; 
+  width: 100%;
 }
 
 @media (max-width: 523px) {

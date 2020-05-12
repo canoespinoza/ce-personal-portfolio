@@ -1,8 +1,8 @@
 import React from 'react';
-import mortgageCalc from './images/mortgageCalc.png';
-import vstda from './images/vstda.png';
-import sdTopSpots from './images/sdtopspots.png';
-import CRLee from './images/C.R. Lee (1).webm';
+import limlogo from '../assets/images/lim-logo.png';
+import vstda from '../assets/images/vstda.png';
+import sdTopSpots from '../assets/images/sdtopspots.png';
+import CRLee from '../assets/images/C.R. Lee (1).webm';
 
 export default class Projects extends React.Component {
 
@@ -12,8 +12,60 @@ export default class Projects extends React.Component {
         <h1 className='sectionTitle'>Projects</h1>
         <div className='bodyContainer'>
             <div className='projectBody'>
+
               <div className='sectionBody'>
-              <div className='projectLink'>
+
+                <div className='projectLink'>
+                  <a href='https://www.linkedin.com/company/im-limitless-llc/about/' target='_blank'>
+                    <img className='projImage' id='lim-logo' src={limlogo}></img>
+                  </a>
+                  <div className='projectInfo'>
+                    <h4 className='projectTitle'>IM LIMITLESS</h4>
+                    <a className='gitLink' href='https://www.linkedin.com/company/im-limitless-llc/about/' target='_blank'>
+                      https://www.linkedin.com/company/im-limitless-llc/about/
+                    </a>  
+                    <ul className='projectDescription'>
+                      <li>Goal-tracking mobile app that provides rewards through partnerships with local businesses</li>
+                      <li>Launching August 2020</li>
+                      <li>React Native, Javascript, PostgreSQL, Go</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className='projectLink'>  
+                  <a href='https://ce-vstda.herokuapp.com/' target='_blank'>
+                    <img className='projImage' src={vstda}></img>
+                  </a>
+                  <div className='projectInfo'>
+                    <h4 className='projectTitle'>Very Simple ToDo App:</h4>  
+                    <a className='gitLink' href='https://github.com/canoespinoza/React100-VSTDA' target='_blank'>
+                      https://github.com/canoespinoza/React100-VSTDA
+                    </a>
+                    <ul className='projectDescription'>
+                      <li>Features include adding todo items, color-coding them based on priority, marking them as completed, removing them from the list, and editing them. </li>
+                      <li>Javascript, React, Bootstrap, Express</li>
+                    </ul>
+                  </div>
+                </div> 
+
+                <div className='projectLink'> 
+                  <a href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>
+                    <img className='projImage' src={sdTopSpots}></img>
+                  </a>
+                  <div className='projectInfo'>
+                    <h4 className='projectTitle'>San Diego Top Spots:</h4>  
+                    <a className='gitLink' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots' target='_blank'>
+                    https://github.com/canoespinoza/React100-San-Diego-Top-Spots
+                    </a>
+                    <ul className='projectDescription'>
+                      <li>Displays a short description of a fun activity in San Diego</li>
+                      <li>Integrates Google Maps API to display location link</li>
+                      <li>Javascript, React, Bootstrap, Express, Axios</li>
+                    </ul>
+                  </div>
+                </div>  
+
+                <div className='projectLink'>
                   <video controls
                     src={CRLee}
                     className='projVideo'
@@ -25,64 +77,15 @@ export default class Projects extends React.Component {
                     </p>
                   </video>
                   <div className='projectInfo'>
-                    <h4 className='projectTitle'>Cheryl R. Lee's Brand Website:</h4>  
-                    <div className='projectDescription'>
-                      This is a screencast walkthrough of Ms. Lee's brand website. A team and I were asked to transition Ms. Lee's personal site out of Wordpress and into React.
-                      We were given content and a color scheme, but we had free reign to structure out 
-                      the site how we saw fit. I designed and built the Credentials and Achievements pages (timestamps 0:39 and 1:04), 
-                      which the team decided to adopt as the standard layout for each page. The site is fully-responsive and
-                      looks great on mobile devices (timestamp 2:00). Ms. Lee was extremely happy with our work. 
-                    </div>
+                    <h4 className='projectTitle'>Cheryl R. Lee's Brand Website:</h4> 
+                    <ul className='projectDescription'>
+                      <li>A team and I were asked to transition Ms. Lee's personal site out of Wordpress and into React.</li>
+                      <li>I designed and built the Credentials and Achievements pages (timestamps 0:39 and 1:04), which the team decided to adopt as the standard layout for each page.</li>
+                      <li>Fully responsive design (timestamp 2:00)</li>
+                    </ul> 
                   </div>
                 </div>
-                <div className='projectLink'>
-                  <a href='https://ce-mortgage-calculator.herokuapp.com/' target='_blank'>
-                    <img className='projImage' src={mortgageCalc}></img>
-                  </a>
-                  <div className='projectInfo'>
-                    <h4 className='projectTitle'>Mortgage Calculator:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React-Mortgage-Calculator' target='_blank'>
-                      https://github.com/canoespinoza/React-Mortgage-Calculator
-                    </a>
-                    <div className='projectDescription'>
-                      Want to know your mortgage payments? This app accepts input for a loan amount,
-                      an interest rate, and a term length, then calculates your mortgage payment one the button 
-                      is clicked. Built using Javascript, React, Bootstrap, and Express.
-                    </div>
-                  </div>
-                </div>
-                <div className='projectLink'>  
-                  <a href='https://ce-vstda.herokuapp.com/' target='_blank'>
-                    <img className='projImage' src={vstda}></img>
-                  </a>
-                  <div className='projectInfo'>
-                    <h4 className='projectTitle'>Very Simple ToDo App:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React100-VSTDA' target='_blank'>
-                      https://github.com/canoespinoza/React100-VSTDA
-                    </a>
-                    <div className='projectDescription'>
-                      Keep track of all your tasks using this todo app. Features include adding todo items, color-coding them
-                      based on priority, marking them as completed, removing them from the list, and editing them. 
-                      Built using Javascript, React, Bootstrap, and Express.
-                    </div>
-                  </div>
-                </div> 
-                <div className='projectLink'> 
-                  <a href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>
-                    <img className='projImage' src={sdTopSpots}></img>
-                  </a>
-                  <div className='projectInfo'>
-                    <h4 className='projectTitle'>San Diego Top Spots:</h4>  
-                    <a className='gitLink' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots' target='_blank'>
-                    https://github.com/canoespinoza/React100-San-Diego-Top-Spots
-                    </a>
-                    <div className='projectDescription'>
-                      Discover fun things to do in San Diego with this app. Displays a short description of the activity and a map 
-                      to it's location Google maps.
-                      Built using  Javascript, React, Bootstrap, Express, and Axios.
-                    </div>
-                  </div>
-                </div>  
+
               </div>
             </div>
         </div>
