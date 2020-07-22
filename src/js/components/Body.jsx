@@ -11,7 +11,7 @@ export default class Body extends React.Component {
               <img id='heroPic' src={heroPic}/>
               <h2 className='subHeader'>What's up!</h2>
               <p className='listText'>
-                My name is Cano, I'm a Fullstack Developer living in San Diego, CA  
+                My name is Cano, I'm a Full Stack Developer living in San Diego, CA. 
               </p>
             </div>
         </div>

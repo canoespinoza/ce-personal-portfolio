@@ -3,6 +3,7 @@ import limlogo from '../assets/images/lim-logo.png';
 import vstda from '../assets/images/vstda.png';
 import sdTopSpots from '../assets/images/sdtopspots.png';
 import CRLee from '../assets/images/C.R. Lee (1).webm';
+import makecoolbeats from '../assets/images/makecoolbeats.png';
 
 export default class Projects extends React.Component {
 
@@ -31,6 +32,24 @@ export default class Projects extends React.Component {
                     </ul>
                   </div>
                 </div>
+
+                <div className='projectLink'>  
+                  <a href='https://www.makecoolbeats.com' target='_blank'>
+                    <img className='projImage' src={makecoolbeats}></img>
+                  </a>
+                  <div className='projectInfo'>
+                    <h4 className='projectTitle'>make cool beats</h4>  
+                    <a className='gitLink' href='https://github.com/canoespinoza/make-cool-beats' target='_blank'>
+                    https://github.com/canoespinoza/make-cool-beats
+                    </a>
+                    <ul className='projectDescription'>
+                      <li>A free, mobile-first drum pad that accurately represents what professional music producers use</li>
+                      <li>Sleek, simple, interactive UI that is perfect for mobile use </li>
+                      <li>Created the website with the goal of bringing the fun of beat-making to the masses</li>
+                      <li>Javascript, Howler.js, CSS Grid</li>
+                    </ul>
+                  </div>
+                </div> 
 
                 <div className='projectLink'>  
                   <a href='https://ce-vstda.herokuapp.com/' target='_blank'>

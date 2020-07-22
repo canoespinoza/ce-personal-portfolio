@@ -14,7 +14,6 @@
   align-items: center;
 }
 
-//add other src for all compatibility 
 @font-face {
   font-family: 'TypoThin';
   src: url(fonts/TypoThin/typo_round_thin_demo-webfont.woff);
@@ -140,12 +139,12 @@
 
 #heroPic {
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.8;
 }
 
 .subHeader {
   font-family: TypoRegular;
-  font-size: 3vw;
+  font-size: 4vw;
   color: white;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -157,7 +156,7 @@
 .listText {
   font-size: 2vw;
   color: white;
-  font-family: TypoItalics;
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 25%;

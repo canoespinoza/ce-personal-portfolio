@@ -2,7 +2,7 @@ import React from 'react';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLinkedin, faGithub, faSoundcloud, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import resume from '../assets/documents/CanoEspinozaResume.pdf';
+import resume from '../assets/documents/Cano Espinoza Resume.pdf';
 import logo from '../assets/images/CElogo7.png';
 
 export default class CEheader extends React.Component {
