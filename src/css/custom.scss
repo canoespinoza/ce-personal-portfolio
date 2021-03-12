@@ -18,7 +18,8 @@
   src: url(fonts/TypoItalics/typo_round_light_italic_demo-webfont.woff);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 
 /* GLOBAL */
 
@@ -38,36 +39,82 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
+.button-1 {
+  background-color: rgb(149, 154, 158);
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  margin: 15px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.button-1:hover {
+  background-color: #51ADF1;
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border-radius: 5px;
+  transform: scale(1.1); 
+}
+
+.button-2 {
+  background-color: rgb(149, 154, 158);
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+
+.button-2:hover {
+  background-color: #51ADF1;
+  color:white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  border-radius: 5px;
+  transform: scale(1.1); 
+}
+//background-color: #E2F0FB;
 
 /* #region header */
 
 .header-container {
   width: 100%;
   display: flex;
-  position:fixed;
   flex-direction: row;
-  justify-content: center;
 }
 
 #header {
   width: 100%;
+  flex-direction: row;
   background-color: white;
+  position: fixed;
 }
 
 .logo {
-  width: 150px;
-  padding: 1em 1em 1em 2em;
+  width: 80px;
+  padding: 1em 2em;
 }
 
-.logo-hidden {
-  width: 50px;
-  padding: 1em 1em 1em 2em;
-}
+// .logo-hidden {
+//   width: 50px;
+//   padding: 1em 1em 1em 2em;
+// }
 
 //HEADER TITLE NOT IN USE ATM
 // #title {
@@ -83,22 +130,23 @@ body {
 
 #links {
   align-content: center;
-  padding: 3em 2em 2em 0;
+  padding: 1em 2em;
   display: inline-flex;
   float: right;
   margin-top: 1em;
 }
 
 #resume-link {
-  font-family: sans-serif; 
-  text-decoration: none
+  font-family: 'Open Sans'; 
+  text-decoration: none;
+  font-weight: 400;
 }
 
 #resume {
   margin: 0;
   font-size: 1.5em;
   padding: 0.5em; 
-  color:rgba(172, 181, 189);
+  color:rgb(149, 154, 158);
 }
 
 #resume:hover {
@@ -108,7 +156,7 @@ body {
 .icon {
   font-size: 1.7em;
   padding: 0.5em;
-  color: rgba(172, 181, 189);
+  color: rgb(149, 154, 158);
 }
 
 .icon:hover {
@@ -126,6 +174,7 @@ body {
 
   #header {
     text-align: center;
+    position: static;
   }
 
   #links {
@@ -136,6 +185,7 @@ body {
   }
 
 }
+
 
 /* #endregion header */
 
@@ -181,8 +231,27 @@ body {
 
 /* #region projects */
 
+#evochiro {
+  grid-area: a1;
+}
+#vcsg {
+  grid-area: b1;
+}
+#limitless {
+  grid-area: a2;
+}
+#makecoolbeats {
+  grid-area: b2;
+}
+#sdtopspots {
+  grid-area: a3;
+}
+#vstda {
+  grid-area: b3;
+}
+
 .project-body {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   margin: auto;
@@ -191,8 +260,13 @@ body {
 }
 
 .section-body {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "a1 b1"
+    "a2 b2"
+    "a3 b3";
   justify-content: center;
   align-items: baseline;
 }
@@ -248,7 +322,7 @@ body {
 .project-title {
   color: #1f51a5;
   font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
 }
 
 .git-link {
@@ -261,7 +335,7 @@ body {
 
 .project-description {
   color: rgb(83, 83, 83);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   margin-top: 1em;
   word-spacing: 2px;
   line-height: 1.5em;
@@ -275,6 +349,13 @@ body {
   .project-link {
     margin-top: 2em;
     margin-bottom: 2em;
+  }
+
+  .section-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
   }
 }
 /* #endregion projects */

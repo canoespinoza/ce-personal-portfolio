@@ -1,9 +1,12 @@
 import React from 'react';
-import limlogo from '../assets/images/lim-logo.png';
-import vstda from '../assets/images/vstda.png';
-import sdTopSpots from '../assets/images/sdtopspots.png';
-import CRLee from '../assets/images/C.R. Lee (1).webm';
-import makecoolbeats from '../assets/images/makecoolbeats.png';
+import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import limlogo from '../assets/images/limitless-new.png';
+import vstda from '../assets/images/vstda-new.png';
+import sdTopSpots from '../assets/images/sdtopspots-new.png';
+import vcsg from '../assets/images/vcsg.png';
+import evochiro from '../assets/images/evolutionchiro.png';
+import makecoolbeats from '../assets/images/makecoolbeats-new.png';
 
 export default class Projects extends React.Component {
 
@@ -16,32 +19,78 @@ export default class Projects extends React.Component {
 
               <div className='section-body'>
 
-                <div className='project-link'>
+              <div className='project-link' id='evochiro'> 
+                  <a href='https://www.evolutionchiro.com/' target='_blank'>
+                    <img className='proj-image' src={evochiro}></img>
+                  </a>
+                  <div className='project-info'>
+                    <h4 className='project-title'>Evolution Chiropractic</h4>  
+                    <a className='git-link' href='https://www.evolutionchiro.com/' target='_blank'>
+                      <Button class='button-1'>
+                        View Website
+                      </Button>
+                    </a>
+                    <ul className='project-description'>
+                      <li>HTML, CSS, October CMS</li>
+                    </ul>
+                  </div>
+                </div>  
+                
+              <div className='project-link' id='vcsg'> 
+                  <a href='https://www.vcsgvets.com/' target='_blank'>
+                    <img className='proj-image' src={vcsg}></img>
+                  </a>
+                  <div className='project-info'>
+                    <h4 className='project-title'>VCSG</h4>  
+                    <a className='git-link' href='https://www.vcsgvets.com/' target='_blank'>
+                      <Button class='button-1'>
+                        View Website
+                      </Button>
+                    </a>
+                    <ul className='project-description'>
+                      <li>HTML, CSS, October CMS</li>
+                    </ul>
+                  </div>
+                </div>  
+
+                <div className='project-link' id='limitless'>
                   <a href='https://www.linkedin.com/company/im-limitless-llc/about/' target='_blank'>
                     <img className='proj-image' id='lim-logo' src={limlogo}></img>
                   </a>
                   <div className='project-info'>
                     <h4 className='project-title'>IM LIMITLESS</h4>
                     <a className='git-link' href='https://www.linkedin.com/company/im-limitless-llc/about/' target='_blank'>
-                      https://www.linkedin.com/company/im-limitless-llc/about/
+                      <Button class='button-1'>
+                        Learn More
+                      </Button>
                     </a>  
                     <ul className='project-description'>
                       <li>Goal-tracking mobile app that provides rewards through partnerships with local businesses</li>
-                      <li>Launching August 2020</li>
                       <li>React Native, Javascript, PostgreSQL, Go</li>
+                      <li>Coming soon...</li>
                     </ul>
                   </div>
                 </div>
 
-                <div className='project-link'>  
+                <div className='project-link' id='makecoolbeats'>  
                   <a href='https://www.makecoolbeats.com' target='_blank'>
                     <img className='proj-image' src={makecoolbeats}></img>
                   </a>
                   <div className='project-info'>
-                    <h4 className='project-title'>make cool beats</h4>  
-                    <a className='git-link' href='https://github.com/canoespinoza/make-cool-beats' target='_blank'>
-                    https://github.com/canoespinoza/make-cool-beats
-                    </a>
+                    <h4 className='project-title'>make cool beats</h4>
+                      <ButtonGroup 
+                        orientation='vertical'>
+                        <a className='git-link' href='https://www.makecoolbeats.com' target='_blank'>  
+                            <Button class='button-1' size='large'>
+                              View WebApp
+                            </Button>
+                        </a>  
+                        <a className='git-link' href='https://github.com/canoespinoza/make-cool-beats' target='_blank'>
+                          <Button class='button-2' size='large'>
+                            View Github
+                          </Button>
+                        </a>
+                      </ButtonGroup>
                     <ul className='project-description'>
                       <li>A free, mobile-first drum pad that accurately represents what professional music producers use</li>
                       <li>Sleek, simple, interactive UI that is perfect for mobile use </li>
@@ -51,14 +100,26 @@ export default class Projects extends React.Component {
                   </div>
                 </div> 
 
-                <div className='project-link'>  
+                <div className='project-link' id='vstda'>  
                   <a href='https://ce-vstda.herokuapp.com/' target='_blank'>
                     <img className='proj-image' src={vstda}></img>
                   </a>
                   <div className='project-info'>
                     <h4 className='project-title'>Very Simple ToDo App:</h4>  
                     <a className='git-link' href='https://github.com/canoespinoza/React100-VSTDA' target='_blank'>
-                      https://github.com/canoespinoza/React100-VSTDA
+                      <ButtonGroup 
+                          orientation='vertical'>
+                          <a className='git-link' href='https://ce-vstda.herokuapp.com/' target='_blank'>  
+                              <Button class='button-1' size='large'>
+                                View WebApp
+                              </Button>
+                          </a>  
+                          <a className='git-link' href='https://github.com/canoespinoza/React100-VSTDA' target='_blank'>
+                            <Button class='button-2' size='large'>
+                              View Github
+                            </Button>
+                          </a>
+                        </ButtonGroup>
                     </a>
                     <ul className='project-description'>
                       <li>Features include adding todo items, color-coding them based on priority, marking them as completed, removing them from the list, and editing them. </li>
@@ -67,14 +128,26 @@ export default class Projects extends React.Component {
                   </div>
                 </div> 
 
-                <div className='project-link'> 
+                <div className='project-link' id='sdtopspots'> 
                   <a href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>
                     <img className='proj-image' src={sdTopSpots}></img>
                   </a>
                   <div className='project-info'>
                     <h4 className='project-title'>San Diego Top Spots:</h4>  
                     <a className='git-link' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots' target='_blank'>
-                    https://github.com/canoespinoza/React100-San-Diego-Top-Spots
+                      <ButtonGroup 
+                          orientation='vertical'>
+                          <a className='git-link' href='https://ce-sd-topspots.herokuapp.com/' target='_blank'>  
+                              <Button class='button-1' size='large'>
+                                View WebApp
+                              </Button>
+                          </a>  
+                          <a className='git-link' href='https://github.com/canoespinoza/React100-San-Diego-Top-Spots' target='_blank'>
+                            <Button class='button-2' size='large'>
+                              View Github
+                            </Button>
+                          </a>
+                        </ButtonGroup>
                     </a>
                     <ul className='project-description'>
                       <li>Displays a short description of a fun activity in San Diego</li>
@@ -83,27 +156,6 @@ export default class Projects extends React.Component {
                     </ul>
                   </div>
                 </div>  
-
-                <div className='project-link'>
-                  <video controls
-                    src={CRLee}
-                    className='proj-video'
-                  >
-                    <source src={CRLee} type='video/webm'/>
-                    <p>Unfortunately, your browser does not support this video.
-                       But you can view it here: <a href='https://drive.google.com/file/d/1hTaKlHJN49NhBqep7J1UWIpN_LnKmK6k/view?usp=sharing'
-                       >C.R. Lee Walkthrough</a>
-                    </p>
-                  </video>
-                  <div className='project-info'>
-                    <h4 className='project-title'>Cheryl R. Lee's Brand Website:</h4> 
-                    <ul className='project-description'>
-                      <li>A team and I were asked to transition Ms. Lee's personal site out of Wordpress and into React.</li>
-                      <li>I designed and built the Credentials and Achievements pages (timestamps 0:39 and 1:04), which the team decided to adopt as the standard layout for each page.</li>
-                      <li>Fully responsive design (timestamp 2:00)</li>
-                    </ul> 
-                  </div>
-                </div>
 
               </div>
             </div>

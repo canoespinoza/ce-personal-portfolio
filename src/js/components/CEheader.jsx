@@ -7,28 +7,28 @@ import logo from '../assets/images/CElogo7.png';
 
 export default class CEheader extends React.Component {
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+//   componentDidMount() {
+//     window.addEventListener("scroll", this.handleScroll);
+//   }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+//   componentWillUnmount() {
+//     window.removeEventListener("scroll", this.handleScroll);
+//   }
 
 
-handleScroll(e) {
-  if (window.scrollY > 100) {
-    document.querySelector(".logo").className = "logo-hidden";
-  } 
-  else {
-    document.querySelector(".logo").className = "logo";
-  }
-};
+// handleScroll(e) {
+//   if (window.scrollY > 100) {
+//     document.querySelector(".logo").className = "logo-hidden";
+//   } 
+//   else {
+//     document.querySelector(".logo").className = "logo";
+//   }
+// };
 
   render() {
     return (
       <div className='overall-container'>
-        <div className='header-container' onScroll={this.handleScroll}>
+        <div className='header-container'>
             <div id='header'>
               <img className='logo' src={logo}/>
               {/* <div id='title'>Cano Espinoza</div> */}
