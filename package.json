@@ -36,7 +36,7 @@
     "babel-loader": "^8.1.0",
     "cssnano": "^4.1.10",
     "deasync": "^0.1.20",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
     "rea": "0.0.1",
